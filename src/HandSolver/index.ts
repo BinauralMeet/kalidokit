@@ -22,8 +22,8 @@ export class HandSolver {
             new Vector(lm[side === RIGHT ? 5 : 17]),
         ];
         const handRotation = Vector.rollPitchYaw(palm[0], palm[1], palm[2]);
-        handRotation.y = handRotation.z;
-        handRotation.y -= side === LEFT ? 0.4 : 0.4;
+        //handRotation.y = handRotation.z;
+        //handRotation.y -= side === LEFT ? 0.4 : 0.4;
 
         let hand: Record<string, unknown> = {};
         hand[side + "Wrist"] = { x: handRotation.x, y: handRotation.y, z: handRotation.z };
