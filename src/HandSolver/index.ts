@@ -60,7 +60,7 @@ const rigFingers = (hand: THandUnsafe<typeof side>, side: Side = RIGHT): THand<t
     const digits = ["Ring", "Index", "Little", "Thumb", "Middle"];
     const segments = ["Proximal", "Intermediate", "Distal"];
 
-    hand[side + "Wrist"].x = clamp(hand[side + "Wrist"].x * 2 * invert, -0.3, 0.3); // twist
+    //    hand[side + "Wrist"].x = clamp(hand[side + "Wrist"].x * 2 * invert, -0.3, 0.3); // twist
     hand[side + "Wrist"].y = clamp(
         hand[side + "Wrist"].y * 2.3,
         side === RIGHT ? -1.2 : -0.6,
