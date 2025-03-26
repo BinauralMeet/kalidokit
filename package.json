@@ -60,17 +60,5 @@
     ],
     "author": "yeemachine",
     "license": "MIT",
-    "year": "2020-2021",
-    "exports": {
-        ".": {
-        "import": {
-            "types": "./dist/index.d.ts",
-            "default": "./dist/kalaidokit.umd.js"
-        },
-        "require": {
-            "types": "./dist/index.d.ts",
-            "default": "./dist/index.js"
-        }
-    }
-  }
+    "year": "2020-2021"
 }
